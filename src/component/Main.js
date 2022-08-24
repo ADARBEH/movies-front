@@ -22,7 +22,7 @@ class Main extends React.Component {
 
 
         const mainmovies = await axios.get(`https://movie-adarbeh.herokuapp.com/${id}`)
-        console.log(mainmovies.data.result.embedUrls)
+        // console.log(mainmovies.data.result.embedUrls)
         this.setState({
             server: mainmovies.data.result.embedUrls
         })
